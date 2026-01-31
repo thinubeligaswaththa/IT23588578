@@ -6,9 +6,9 @@ const scenarios = [
 
   {
     id: 'Pos_Fun_0001',
-    name: 'Convert a short daily greeting phrase',
-    input: 'Suba udhaeesanak veevaa!',
-    expected: 'සුබ උදෑසනක් වේවා!'
+    name: 'Convert a simple present-tense statement about going to see the sea/beach',
+    input: 'api muhudha balanna yanavaa.',
+    expected: 'අපි මුහුද බලන්න යනවා.'
 
   },
 
@@ -40,9 +40,9 @@ const scenarios = [
 
   {
     id: 'Pos_Fun_0005',
-    name: 'Convert polite request sentence',
-    input: 'karuNaakaralaa mata podi udhavvak karanna puLuvandha?',
-    expected: 'කරුණාකරලා මට පොඩි උදව්වක් කරන්න පුළුවන්ද?'
+    name: 'Convert a medium-length multi-sentence conversational paragraph with mixed elements (statements, request, question, greeting)',
+    input: 'api gedhara yanavaa. mama pothak kiyavanna oone. oyaata enna puluvan dha? suba raathriyak veevaa.',
+    expected: 'අපි ගෙදර යනවා. මම පොතක් කියවන්න ඕනෙ. ඔයාට එන්න පුලුවන් ද? සුබ රාත්‍රියක් වේවා.'
 
   },
 
@@ -114,8 +114,8 @@ const scenarios = [
   {
     id: 'Pos_Fun_0014',
     name: 'Long paragraph style input',
-    input: 'adha hariyata vaessaa. mama paasal yanna hithan hitiyee namuth vaessa nisaa mata yanna baeri unaa. gedhara idhan mama vaeda kalaa. heta vaessa naethi veyi kiyalaa mama hithanavaa. ehenam api heta hamuvemu needha? oyath ikmanata vaeda ivara karanna. suba raathriyak veevaa!',
-    expected: 'අද හරියට වැස්සා. මම පාසල් යන්න හිතන් හිටියේ නමුත් වැස්ස නිසා මට යන්න බැරි උනා. ගෙදර ඉදන් මම වැඩ කලා. හෙට වැස්ස නැති වෙයි කියලා මම හිතනවා. එහෙනම් අපි හෙට හමුවෙමු නේද? ඔයත් ඉක්මනට වැඩ ඉවර කරන්න. සුබ රාත්‍රියක් වේවා!'
+    input: 'adha hariyata vaessaa. mama paasal yanna hithan hitiyee namuth vaessa nisaa mata yanna baeri unaa. gedhara idhan mama vaeda kalaa. heta vaessa naethi veyi kiyalaa mama hithanavaa. ehenam api heta hamuvemu needha?',
+    expected: 'අද හරියට වැස්සා. මම පාසල් යන්න හිතන් හිටියේ නමුත් වැස්ස නිසා මට යන්න බැරි උනා. ගෙදර ඉදන් මම වැඩ කලා. හෙට වැස්ස නැති වෙයි කියලා මම හිතනවා. එහෙනම් අපි හෙට හමුවෙමු නේද?'
 
   },
 

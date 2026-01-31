@@ -38,23 +38,31 @@ const scenarios = [
 
   {
     id: 'Neg_Fun_0005',
-    name: 'Complex w mapping in middle of word',
-    input: 'api sanduda thawa yamu.',
-    expected: 'අපි සඳුදා තව යමු.'
+    name: 'Handle heavy mixed English content',
+    input: 'This is a test with api yanawaa.',
+    expected: 'This is a test with අපි යනවා.'
+
+  },
+
+  {
+    id: 'Neg_Fun_0006',
+    name: 'Handle abbreviation mismatch',
+    input: 'pls enna.',
+    expected: 'pls එන්න.'
 
   },
 
   {
     id: 'Neg_Fun_0007',
-    name: 'Incorrect "Hal-Kirima" (stop sign) on nasal soundst',
-    input: 'ammaage praarthana.',
-    expected: 'අම්මාගේ ප්‍රාර්ථනා.'
+    name: 'Handle line breaks in input',
+    input: 'apigedarayanawa.',
+    expected: 'අපි ගෙදර යනවා.'
 
   },
 
   {
     id: 'Neg_Fun_0008',
-    name: 'Convert complex conditional sentence with contrast',
+    name: 'Some english words are not converted properly',
     input: 'meeke 60v bulb ekak thiyenne.',
     expected: 'මේකේ 60v බල්බ් එකක් තියෙන්නේ.'
 
@@ -63,15 +71,15 @@ const scenarios = [
   {
     id: 'Neg_Fun_0009',
     name: 'Convert complex conditional sentence with contrast',
-    input: 'oyaage cv.pdf eka evannadha?',
+    input: 'oyaaage cv.pdf eka evannanda?',
     expected: 'ඔයාගේ cv.pdf එක එවන්නද?'
 
   },
 
   {
     id: 'Neg_Fun_0010',
-    name: 'Convert complex conditional sentence with contrast',
-    input: 'giya saDHAaudhaa mama mahanuvara giyaa. ehee hariyatama vaessa nisaa mata yanna hithan hitiya keethugala balanna baeri vunaa..',
+    name: 'Convert a suggestion/imperative phrase with day of the week (FAIL due to incorrect vowel/consonant mapping in "සඳුදා")',
+    input: 'giya saDHAaudhaa mama mahanuvara giyaa. ehee hariyatama vaessa nisaa mata yanna hithan hitiya keethugala balanna baeri vunaa.',
     expected: 'ගිය සඳුදා මම මහනුවර ගියා. එහේ හරියටම වැස්ස නිසා මට යන්න හිතන් හිටිය කේතුගල බලන්න බැරි වුනා.'
 
   },

@@ -27,7 +27,7 @@ Git
 A modern web browser (Chrome / Edge)
 Installation
 Clone the repository
-git clone https://github.com/HeshaniWickramasinghe/IT23690998.git==========1
+git clone https://github.com/thinubeligaswaththa/IT23588578.git
 Navigate to the project directory
 cd playwright-project
 Install dependencies
@@ -121,7 +121,7 @@ Ensure the following are installed on your system:
 1. Clone the repository
 
 ```bash
-git clone https://github.com/HeshaniWickramasinghe/IT23690998.git=========2
+git clone https://github.com/thinubeligaswaththa/IT23588578.git
 ```
 
 2. Navigate to the project directory
@@ -190,8 +190,8 @@ npx playwright test positive.spec.js
 
 ## Author
 
-* Name: B.A.H. Wickramasinghe
-* Registration Number: IT23690998============================03
+* Name: Beligaswaththa B A M T T
+* Registration Number: IT23588578
 ---
 
 This project follows Playwright best practices and is suitable for academic evaluation.
